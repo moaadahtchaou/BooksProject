@@ -1,0 +1,6 @@
+.loader {
+    height: 200px;
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+}

@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@font-face {
+  font-family: "Copernicus";
+  src: url("./font/GalaxieCopernicus-Book.ttf");
+}
+.container{
+  max-width: 1200px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Public Sans', sans-serif;
+  font-weight: 300;
+}
+:root {
+  --primary: #1aac83;
+  --error: #e7195a;
+}
+body {
+  background: #fafafafa;
+  margin: 0;
+}
+a{
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  cursor: pointer;
+  text-decoration: none;
+}
+button{
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  cursor: pointer;
+}
+svg{
+  font-size: 20px;
+}
+/* css for Navbar.js */
+.nav {
+  background-color: #33363F;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav .container {
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 53px;
+  flex-grow: 1;
+}
+
+.nav .search
+{
+  background-color: #FAFAFA;
+  border-radius: 5px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  max-width: 500px;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+.nav .search input
+{
+  border: none;
+  background-color: transparent;
+  margin-left: 8px;
+  max-width: 460px;
+  flex-grow: 1;
+}
+.nav .search input:focus{
+  outline: none;
+}
+.nav .search svg{
+  margin: 0 6px;
+  color:#5D586C
+}
+
+
+
+
+.nav .right-co{
+  height: 100%;
+  display: flex;
+}
+.nav .right-co .But{
+  height: 100%;
+  display: flex;
+}
+.nav .right-co .But a {
+  display: flex;
+  align-items: center;
+}
+.nav .right-co .But .Line{
+    border: 1px solid #797979;
+}
+.nav .right-co svg{
+  color:#FAFAFA;
+  margin-left: 6px;
+}
+.nav .right-co p{
+  color:#FFFFFF;
+  font-size: 13px;
+  margin: 0px 6px;
+}
+
+
+
+/* Body */
+.Body{
+  display: flex;
+  justify-content: center;
+}
+.Body .grow{
+  flex-grow: 1;
+  display: flex;  
+  justify-content: center;
+}
+.Body .container{
+  margin: 50px 0;
+  /* display: flex;
+  align-items: flex-start; */
+  flex-grow: 1;
+  display: grid;
+  grid-template-columns:minmax(180px,250px) minmax(600px,auto);
+  grid-gap: 25px;
+}
+
+.Leftbar .bg {
+  /* width: 300px; */
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  padding: 9px 0;
+}
+.Leftbar .Btn{
+  display: flex;
+  align-items: center;
+  color: #33363F;
+  border-top: 1px solid #F6F6F6;
+  border-bottom: 1px solid #F6F6F6;
+  height: 45px;
+  width: 100%;
+}
+/* .Leftbar .Btn button{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 11px;
+  width: 100%;
+} */
+.Leftbar .Btn a{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 11px;
+  width: 100%;
+  color: inherit;
+}
+.Leftbar svg{
+  font-size: 18px;
+
+  padding-right: 7px;
+}
+.Home-Data {
+  padding-left: 30px;
+  flex-grow: 1;
+}
+.page_1{
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  grid-gap: 25px;
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+  .page_1{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 25px;
+  }
+  .card {
+    min-width: none;
+  }
+} 

@@ -1,0 +1,64 @@
+
+
+.title{
+    font-size: 13px;
+    color: #33363F;
+}
+.Auth {
+    font-size: 12px;
+    color: #737373;
+}
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    /* min-width: 110px;
+    max-width: 140px; */
+    /* width: 140px;
+    height: 312px; */
+    display:flex;
+    flex-direction: column;
+    font-size: 13px;
+}
+.card .image{
+    /* min-height: 232px; */
+    /* width: 140px; */
+  height: 232px;    
+  width: unset;
+}
+img{
+    width:100%;
+    height: 100%;
+}
+.title_Auth{
+    margin: 11px 0;
+    height: 38px;
+    display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.title_Auth .Coper{
+    font-size: 13px;
+}
+.title_Auth p:last-child{
+    /* margin-top: 6px; */
+}
+.info {
+    background-color: #000000;
+    display: flex;
+    color: #DEDCD3;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5px;
+}
+@media only screen and (max-width: 992px) {
+    
+    .card {
+      min-width: 0;
+    }
+  } 
+
+.info .rating{
+    display: flex;
+    align-items: center;
+}
